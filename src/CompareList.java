@@ -47,19 +47,29 @@ public static long aVeryBigSum(long[] ar) {
 	return numeroSuma;
 }
 
+
+
+public static int metodo(int n){
+	if (n<=2) {
+		return n;
+	}
+	return metodo(n-1)*metodo(n-2);
+}
+
   
 public static void main(String[] args) {
 	
 	//---Ejercicio Comparar Lista
-	Integer[] arrayA = new Integer[] {1,2,3};
+	/*Integer[] arrayA = new Integer[] {1,2,3};
 	Integer[] arrayB = new Integer[] {1,2,3};
-	List<Integer> b = Arrays.asList(arrayB);
-	
-	List<Integer> respuesta =listaCompare(a,b);
+	List<Integer> b = Arrays.asList(arrayB);*/
+	int respuesta = metodo(5);
+	System.out.print(respuesta);
+	/*List<Integer> respuesta =listaCompare(a,b);
 
 	for (int i = 0; i<respuesta.size() ;i++ ) {
 		System.out.println(respuesta.get(i));
-	}
+	}*/
 	//---Ejercicio de suma de long
 	/*long arraySum[] = new long[] {1000000001, 1000000002, 1000000003, 1000000004, 1000000005};
 	System.out.print(aVeryBigSum(arraySum));*/
