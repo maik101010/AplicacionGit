@@ -2,8 +2,7 @@ class Day19 {
 	static public int divisorSum(int n) {
 		int suma=0;
         for(int i=1; i<=n; i++){
-        	int op = n%i;
-        	if (op==0) {
+        	if (n%i==0) {
         		suma+=i;
         	}
         }
