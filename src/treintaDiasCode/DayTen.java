@@ -28,6 +28,6 @@ class DayTen {
 				cont =1;	
 			}
 		}
-		System.out.println(mayor);	
-}
+		System.out.println(mayor);
+		}
 }
