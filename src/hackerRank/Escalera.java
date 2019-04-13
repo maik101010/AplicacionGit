@@ -8,15 +8,13 @@ class Escalera {
 
     	}    	
     	String cadena=espacio;
-    	int cont=0;
-    	for (int i=0;i<n;i++) {
+    	for (int i=1;i<=n;i++) {
     		System.out.println(cadena+""+valor);    		
 			valor+="#";
-			cont++;			
-			if (cont==n) {
+			if (i==n) {
 				break;
 			}
-			cadena=espacio.substring(cont);
+			cadena=espacio.substring(i);
     	}
     }
 
