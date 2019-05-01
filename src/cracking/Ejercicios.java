@@ -1,11 +1,11 @@
 class Ejercicios {
-	static int factorial(int n) {
+	static int metodo(int n) {
 		if (n < 0) {
 			return -1;
 		} else if (n==0){
 			return 1;
 		} else {
-			return n *factorial(n-1);
+			return n *metodo(n-1);
 		}
 }
 
@@ -149,33 +149,32 @@ static int busquedaBinaria(int [] numeros, int numeroBuscar){
 		medio = (inferior + superior+1)/2;
 	}
 
-	// do{
-	// 	if (numeroBuscar == numeros[medio]) {
-	// 		ubicacion = medio;
-	// 	}else if (numeroBuscar<numeros[medio]) {
-	// 		superior = medio-1;
-	// 	}else{
-	// 		inferior = medio+1;
-	// 	}
-	// medio = (inferior + superior+1)/2;
-
-	// }while ((inferior<=superior) && (ubicacion==-1));
-
 	return ubicacion;
 
 
 }
 
+// static String[] repiteCadena(String cadena){
+	
+// }
+
+static int x = 2;
+static{
+	x++;
+}
 public static void main(String[] args) {
+	System.out.print(x);
+	//repiteCadena("michael");
+
    // for (int i=1;i<=10 ;i++ ) {   	
    // 	    boolean primo = isPrime(i);
    // 	    if (primo) {
    // 	    	System.out.println(i + " es primo");
    // 	    }
    // }
-   int [] array = {15,31,46,48,52,58,59,71,72,79,83,86,98};
-   int resultado = busquedaBinaria(array, 86);
-   System.out.println(resultado);
+   // int [] array = {15,31,46,48,52,58,59,71,72,79,83,86,98};
+   // int resultado = busquedaBinaria(array, 86);
+   // System.out.println(resultado);
 
    /*int [] resultados = ordenamientoAsc(array);
 
@@ -189,6 +188,40 @@ public static void main(String[] args) {
    // System.out.println(res[0]);
    // System.out.println(res[1]);
 }
-
-
+static {
+	x-=2;
 }
+}
+//Ejercicio 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

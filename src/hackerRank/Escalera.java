@@ -4,10 +4,14 @@ class Escalera {
 		String valor= "#";
 		String espacio="";
 		for (int i=1;i<n;i++) {
-    		espacio +=" ";   	   	
+    		espacio +="**";   	   	
 
-    	}    	
-    	String cadena=espacio;
+    	} 
+    	System.out.print(espacio);
+    }
+
+
+/*    	String cadena=espacio;
     	for (int i=1;i<=n;i++) {
     		System.out.println(cadena+""+valor);    		
 			valor+="#";
@@ -16,10 +20,10 @@ class Escalera {
 			}
 			cadena=espacio.substring(i);
     	}
-    }
+    }*/
 
 	public static void main(String[] args) {
-		staircase(6);
+		staircase(3);
 		
 	}
 }
