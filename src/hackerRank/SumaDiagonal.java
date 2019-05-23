@@ -8,12 +8,12 @@ class SumaDiagonal {
 	int res=0;
 	/* ----Segunda respuesta----*/
 	
-	/*int diff = 0;
-	for (int i = 0; i < arr.length; i++) {
-	   diff += arr[i][i] - arr[i][arr.length - i - 1];
+	// int diff = 0;
+	// for (int i = 0; i < arr.length; i++) {
+	//    diff += arr[i][i] - arr[i][arr.length - i - 1];
 
-	}
-	return Math.abs(diff);*/
+	// }
+	// return Math.abs(diff);
     
 	for (int i=0; i<arr.length; i++) {
 		for (int j=0;j<arr[i].length; j++ ) {

@@ -52,7 +52,7 @@ class EjerciciosCap7{
 
 	public static void main(String[] args) {
 		int [] array = {2,3,2,9,5,2,1,1,4};
-		swapMinMax(array);
+		System.out.print(minIndex(array));
 		
 	}
 }

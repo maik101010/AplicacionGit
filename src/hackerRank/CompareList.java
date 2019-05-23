@@ -4,34 +4,21 @@ public class CompareList {
 public static List<Integer> listaCompare(List<Integer> a, List<Integer> b){
 	int contA=0;
 	int contB=0;
-	int contPosiciones=0;
 	Integer[] array= new Integer[2];
-	array[0]=0;
-	array[1]=0;
+	array[0]=0; //A
+	array[1]=0; //B
 	for (int i = 0; i<a.size(); i++) {
 		if (a.get(i)>b.get(i)) {
-			contB++;
-			array[0]=contB;		
-			contPosiciones++;
-			
+			contA++; //1
 		}else if(a.get(i)<b.get(i)){
-			contA++;
-			array[1]=contA;
-			contPosiciones++;
+			contB++;//1
 			
-		}else if(a.get(i)==b.get(i)){
-			contPosiciones++;			
-			if (contPosiciones>2) {
-				break;				
-			}
-			array[i]=0;
 		}
 	}
-	List<Integer> lista = Arrays.asList(array);
-	
-
+	array[0] = contA;
+	array[1] = contB;
+	List<Integer> lista = Arrays.asList(array);	
 	return lista;
-
 }
 
 // Complete the aVeryBigSum function below.
@@ -51,13 +38,14 @@ public static long aVeryBigSum(long[] ar) {
 public static void main(String[] args) {
 	
 	//---Ejercicio Comparar Lista
-	Integer[] arrayA = new Integer[] {1,2,3};
-	Integer[] arrayB = new Integer[] {1,2,3};
+	Integer[] arrayA = new Integer[] {2,3,3};
+	Integer[] arrayB = new Integer[] {1,3,3};
+	List<Integer> a = Arrays.asList(arrayA);
 	List<Integer> b = Arrays.asList(arrayB);
 	
 	List<Integer> respuesta =listaCompare(a,b);
 
-	for (int i = 0; i<respuesta.size() ;i++ ) {
+	for (int i = 0; i<respuesta.size(); i++ ) {
 		System.out.println(respuesta.get(i));
 	}
 

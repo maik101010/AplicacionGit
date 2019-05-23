@@ -15,21 +15,21 @@ class Ejercicios {
 		/*
 		     primero
 		 */
-		Scanner scan=new Scanner(System.in);
-		System.out.print("Valor a prestar: ");
+		// Scanner scan=new Scanner(System.in);
+		// System.out.print("Valor a prestar: ");
 
-		int valorPrestado=scan.nextInt();
+		// int valorPrestado=scan.nextInt();
 
-		System.out.print("fecha de consignacion: ");
-		//String str = "1986-04-08 12:30";
-		String time=scan.next(); //default format: hh:mm:ss.
-		LocalDate ld = LocalDate.parse(time);
-		int porcentaje = valorPrestado*2/100;
-		int valorTotal = valorPrestado+porcentaje;
-		int valorMes = valorTotal/12;		
-		//LocalTime lt=LocalTime.parse(time);
-		System.out.println("Valor a pagar mensual: " + valorMes);
-		System.out.println("Valor a pagar total: " +valorTotal);
+		// System.out.print("fecha de consignacion: ");
+		// //String str = "1986-04-08 12:30";
+		// String time=scan.next(); //default format: hh:mm:ss.
+		// LocalDate ld = LocalDate.parse(time);
+		// int porcentaje = valorPrestado*2/100;
+		// int valorTotal = valorPrestado+porcentaje;
+		// int valorMes = valorTotal/12;		
+		// //LocalTime lt=LocalTime.parse(time);
+		// System.out.println("Valor a pagar mensual: " + valorMes);
+		// System.out.println("Valor a pagar total: " +valorTotal);
 
 
 
@@ -151,32 +151,31 @@ class Ejercicios {
 		/*
 		    Cinco
 		 */
-		// Scanner scan = new Scanner(System.in);
-		// System.out.print("Digite cantidad de trabajadores: ");
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Digite cantidad de trabajadores: ");
 
-		// int cantidadTrabajadores = scan.nextInt();
-		// int [] sueldo = new int[cantidadTrabajadores];
+		int cantidadTrabajadores = scan.nextInt();
+		int [] sueldo = new int[cantidadTrabajadores];
 
-		// for (int i=0;i<cantidadTrabajadores;i++ ) {
-		// 	System.out.print("Sueldo trabajador "+(i+1) + " :");
-		// 	//int sueldo = scan.nextInt();
-		// 	sueldo[i]= scan.nextInt();
+		for (int i=0;i<cantidadTrabajadores;i++ ) {
+			System.out.print("Sueldo trabajador "+(i+1) + " :");
+			//int sueldo = scan.nextInt();
+			sueldo[i]= scan.nextInt();
 
-		// }
-		// int mayor=0;
-		// int posicion=0;
-		// for (int j=0; j<sueldo.length-1;j++ ) {
-		// 	int actual = sueldo[j];
-		// 	int siguiente = sueldo[j+1];
+		}
+		int mayor=0;
+		int posicion=0;
+		for (int j=0; j<sueldo.length-1;j++ ) {
+			int actual = sueldo[j];
+			int siguiente = sueldo[j+1];
 			
-		// 	if (actual>=siguiente && actual>mayor) {
-		// 		mayor=actual;
-		// 	}else if (actual<siguiente  && siguiente>mayor) {
-		// 		mayor=siguiente;
-				
-		// 	}
-		// }
-		// System.out.println("El sueldo mayor es de: "+mayor);
+			if (actual<= siguiente) {
+				mayor = siguiente;
+			}else{
+				mayor = actual;
+			}
+		}
+		System.out.println("El sueldo mayor es de: "+mayor);
 
 	
 	}

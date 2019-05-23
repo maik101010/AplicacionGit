@@ -106,11 +106,10 @@ static int [] ordenamientoAsc(int [] numeros){
 static boolean isPrime(int n) {
 	for (int x = 2; x * x <= n; x++) {
 		if (n % x == 0) {
-
 			return false;			
 		}
 	}
- return true;  
+ 	return true;
 }
 
 static int busquedaLineal(int [] numeros, int numeroBuscar){
@@ -157,13 +156,9 @@ static int busquedaBinaria(int [] numeros, int numeroBuscar){
 // static String[] repiteCadena(String cadena){
 	
 // }
-
-static int x = 2;
-static{
-	x++;
-}
 public static void main(String[] args) {
-	System.out.print(x);
+	//System.out.print(x);
+	//x((byte)3 + (byte)4);
 	//repiteCadena("michael");
 
    // for (int i=1;i<=10 ;i++ ) {   	
@@ -172,9 +167,14 @@ public static void main(String[] args) {
    // 	    	System.out.println(i + " es primo");
    // 	    }
    // }
-   // int [] array = {15,31,46,48,52,58,59,71,72,79,83,86,98};
-   // int resultado = busquedaBinaria(array, 86);
-   // System.out.println(resultado);
+   int [] array = {71,31,46,48,52,15,59,72,79,83,86,98};
+   Array.sort(array);
+   int resultado = busquedaBinaria(array, 31);
+   if (resultado!=-1) {
+   		System.out.println("Se encuentra en la posicion "+ resultado);   	
+   }else{
+   		System.out.println("No se encontro");   	
+   }
 
    /*int [] resultados = ordenamientoAsc(array);
 
@@ -188,9 +188,7 @@ public static void main(String[] args) {
    // System.out.println(res[0]);
    // System.out.println(res[1]);
 }
-static {
-	x-=2;
-}
+
 }
 //Ejercicio 2
 

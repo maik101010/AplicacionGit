@@ -3,15 +3,15 @@ class Escalera {
     static void staircase(int n) {
 		String valor= "#";
 		String espacio="";
+		/*
+			Llenamos el espacio de 1 hasta n porque debemos dejar un espacio para el valor 
+		 */
 		for (int i=1;i<n;i++) {
-    		espacio +="**";   	   	
+    		espacio +=" ";   	   	
 
     	} 
-    	System.out.print(espacio);
-    }
 
-
-/*    	String cadena=espacio;
+    	String cadena=espacio;
     	for (int i=1;i<=n;i++) {
     		System.out.println(cadena+""+valor);    		
 			valor+="#";
@@ -20,10 +20,10 @@ class Escalera {
 			}
 			cadena=espacio.substring(i);
     	}
-    }*/
+    }
 
-	public static void main(String[] args) {
-		staircase(3);
+    public static void main(String[] args) {
+		staircase(6);
 		
 	}
 }
