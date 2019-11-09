@@ -1,3 +1,6 @@
+
+import java.util.Arrays;
+
 class Ejercicios {
 	static int metodo(int n) {
 		if (n < 0) {
@@ -168,7 +171,7 @@ public static void main(String[] args) {
    // 	    }
    // }
    int [] array = {71,31,46,48,52,15,59,72,79,83,86,98};
-   Array.sort(array);
+   Arrays.sort(array);
    int resultado = busquedaBinaria(array, 31);
    if (resultado!=-1) {
    		System.out.println("Se encuentra en la posicion "+ resultado);   	
