@@ -25,9 +25,9 @@ class Ejercicios {
         if (str.length() == 0) {
             System.out.println(prefix);
         } else {
-            for (int i = 0; i < str.length(); i++) {
-                String rem = str.substring(0, i) + str.substring(i + 1);
-                permutation(rem, prefix + str.charAt(i));
+            for (int i = 0; i < str.length(); i++) { //ola//3
+                String rem = str.substring(0, i) + str.substring(i + 1); //rem=o-
+                permutation(rem, prefix + str.charAt(i)); //prefix=o-
             }
         }
     }
@@ -77,7 +77,7 @@ class Ejercicios {
     /**
      * Busca dos números que sumados den el resultado del número que queremos buscar
      *
-     * @param arr  array de numeros
+     * @param arr    array de numeros
      * @param numero valor que será buscado
      * @return array de los dos números encontrados
      */
@@ -210,8 +210,8 @@ class Ejercicios {
         }
         for (int i = 0; i < arr.length; i++) {
             int valueKey = arr[i] + key;
-            if (integerMap.containsKey(valueKey)){
-                System.out.println("("+arr[i]+","+valueKey+")");
+            if (integerMap.containsKey(valueKey)) {
+                System.out.println("(" + arr[i] + "," + valueKey + ")");
             }
         }
     }
@@ -236,7 +236,7 @@ class Ejercicios {
 //            System.out.println("No se encontro");
 //        }
 //        String str = "abc";
-        System.out.println(fib(7));
+        permutation("ola");
 //        System.out.println(factor(5));
 //        int arr[] = {1, 7, 5, 9, 2, 12, 3};
 //        countDifferenceNumberGiven(arr, 2);
