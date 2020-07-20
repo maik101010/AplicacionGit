@@ -231,8 +231,8 @@ class ExercisesCap8 {
 //        [2, 1];
 //        [7, 2];
         long startTime = System.nanoTime();
-        //aabcccccaaa
-        zeroMatrix(arr);
+        //hola mundo
+        replaceAllSpace("hola mundo ");
         long endTime = System.nanoTime();
         System.out.println("Tiempo de ejecución one " + (endTime - startTime));
 
